@@ -373,6 +373,13 @@ h1 {
   .gridsys {
     grid-template-columns: repeat(1, 1fr);
   }
+    .navbar div {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: right;
+  }
 }
 .squ {
   background-color: white;
