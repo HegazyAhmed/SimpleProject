@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Cairo", sans-serif;
+  background-image: url(/slider/2131.jpg);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -29,10 +30,13 @@ body::-webkit-scrollbar {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  background-color: cadetblue;
+  background-color: rgb(18, 18, 18);
   width: 230px;
   justify-content: center;
   align-items: center;
+  color: rgb(222, 222, 222);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1090px) {
@@ -56,12 +60,12 @@ body::-webkit-scrollbar {
 .container .mki button {
   padding: 5px;
   margin-bottom: 5px;
-  background-color: aquamarine;
+  background-color: rgb(77, 81, 80);
   border: none;
   border-radius: 10px;
 }
 .container .mki button:hover {
-  background-color: rgb(68, 152, 124);
+  background-color: rgb(131, 134, 133);
   cursor: pointer;
 }
 .container .mki p {
@@ -80,9 +84,10 @@ body::-webkit-scrollbar {
 .ch h2 {
   font-weight: 1000;
   font-size: 50px;
+  color: white;
 }
 .ch h2:hover {
-  color: #4d4c4c;
+  color: #c5c3c3;
   cursor: pointer;
 }
 .block {
