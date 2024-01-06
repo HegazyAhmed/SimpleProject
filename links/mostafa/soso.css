@@ -3,6 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4949;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #292929;
+}
 body {
   font-family: "Cairo", sans-serif;
 }

@@ -8,6 +8,20 @@ body {
   padding: 0;
   font-family: "Cairo", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4949;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #292929;
+}
 .navbar {
   width: 100%;
   background-color: black;
@@ -290,23 +304,36 @@ footer {
     transform: rotate(0);
   }
 }
-.sec,
-.secs {
+.sec {
   margin: 100px auto auto auto;
   text-align: center;
   line-height: 1.8;
   width: 100%;
+  color: black;
 }
 .secs {
   margin: auto auto 100px auto;
+  background-color: black;
+  margin: 100px auto auto auto;
+  line-height: 1.8;
+  width: 100%;
+  color: white;
+  padding: 10px;
 }
 .sec h1 {
   margin: 10px;
   font-size: 40px;
 }
-.sec,
-.secs p {
+.secs h1,
+p {
+  text-align: center;
+}
+.sec p {
   font-size: 20px;
+  margin-bottom: 110px;
+}
+.secs p {
+  font-size: 18px;
 }
 .sec img {
   max-width: 100%;
@@ -319,42 +346,51 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  background-color: black;
+  padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .gridsys {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 @media screen and (max-width: 845px) {
   .gridsys {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 600px) {
+  .gridsys {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .squ {
-  background-color: #000;
-  color: white;
+  background-color: white;
+  color: black;
   width: 240px;
   margin: auto;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   line-height: 1.8;
 }
 
 .squ:hover {
-  background-color: #323131;
+  background-color: #c2c0c0;
 }
 .squ h4 {
   font-size: 25px;
 }
+.squ p {
+  text-align: right;
+}
+
 .squ button {
   border-radius: 5px;
-  background-color: white;
+  background-color: black;
   width: 100px;
   border: none;
   cursor: pointer;
+  margin: 5px 0 0 120px;
+  color: white;
+  height: 30px;
 }
 
 .squ button:hover {
-  background-color: rgb(194, 191, 191);
+  background-color: rgb(61, 60, 60);
 }
