@@ -373,7 +373,7 @@ h1 {
   .gridsys {
     grid-template-columns: repeat(1, 1fr);
   }
-    .navbar div {
+  .navbar div {
     display: none;
   }
   .navbar {
