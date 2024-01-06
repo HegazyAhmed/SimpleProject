@@ -32,4 +32,3 @@ buttons[8].addEventListener("click", function () {
 buttons[9].addEventListener("click", function () {
   window.open("contents/10.pdf");
 });
-
