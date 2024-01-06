@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .navbar {
   width: 100%;
@@ -51,13 +50,17 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
+.fs {
+  margin-right: 10px;
+}
 #items .item {
   position: relative;
   cursor: pointer;
   font-size: 1em; /* originally 2ems  */
   padding: 15px 30px;
   -webkit-transition: all 250ms;
+  margin: 10px 0 0 0;
+
   transition: all 250ms;
 }
 
@@ -144,11 +147,9 @@ body {
 /* /footer */
 
 .ground {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  margin: 400px auto auto auto;
   text-align: center;
+  height: 50vh;
 }
 
 footer {
@@ -288,4 +289,72 @@ footer {
   100% {
     transform: rotate(0);
   }
+}
+.sec,
+.secs {
+  margin: 100px auto auto auto;
+  text-align: center;
+  line-height: 1.8;
+  width: 100%;
+}
+.secs {
+  margin: auto auto 100px auto;
+}
+.sec h1 {
+  margin: 10px;
+  font-size: 40px;
+}
+.sec,
+.secs p {
+  font-size: 20px;
+}
+.sec img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 40px;
+}
+.gridsys {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .gridsys {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 845px) {
+  .gridsys {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.squ {
+  background-color: #000;
+  color: white;
+  width: 240px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+  line-height: 1.8;
+}
+
+.squ:hover {
+  background-color: #323131;
+}
+.squ h4 {
+  font-size: 25px;
+}
+.squ button {
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.squ button:hover {
+  background-color: rgb(194, 191, 191);
 }

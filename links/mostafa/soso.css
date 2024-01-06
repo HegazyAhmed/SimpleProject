@@ -12,16 +12,16 @@ body::-webkit-scrollbar {
 #index1 {
   background-color: #eee;
 }
+img {
+  position: absolute;
+  z-index: -1;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 20px auto;
   text-align: center;
   gap: 10px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 35%;
-  left: 50%;
   display: none;
 }
 .container .mki {
@@ -36,12 +36,13 @@ body::-webkit-scrollbar {
   color: rgb(222, 222, 222);
   padding: 10px;
   border-radius: 10px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1090px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
-    top: 47%;
+    top: 0%;
   }
 }
 @media screen and (max-width: 855px) {
@@ -53,7 +54,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 600px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
-    top: 130%;
+    top: 140%;
   }
 }
 .container .mki button {
@@ -83,7 +84,7 @@ body::-webkit-scrollbar {
 .ch h2 {
   font-weight: 1000;
   font-size: 50px;
-  color: white;
+  color: black;
 }
 .ch h2:hover {
   color: #c5c3c3;

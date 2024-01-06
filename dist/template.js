@@ -96,3 +96,7 @@ const CSD = document.querySelectorAll("#CSD");
 CSD[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
 });
+const CSDT = document.querySelectorAll(".squ button");
+CSDT[0].addEventListener("click", function () {
+  window.open("links/mostafa/soso.html");
+});
