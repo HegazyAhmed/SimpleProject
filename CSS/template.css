@@ -468,15 +468,14 @@ h1 {
   line-height: 1.8;
   text-align: center;
   padding: 20px;
+  transition: 0.7s ease;
 }
 
 .squ:hover {
-  background-color: #d4d3b1;
+  background-color: #3f3f33;
   cursor: pointer;
   transform: scale(1.1);
-  transform: rotate(2deg);
-  transition: 0.7s;
-  color: var(--main2);
+  color: white;
 }
 .squ h4 {
   font-size: 35px;
