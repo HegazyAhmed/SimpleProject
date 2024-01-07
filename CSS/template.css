@@ -474,7 +474,9 @@ h1 {
   background-color: #d4d3b1;
   cursor: pointer;
   transform: scale(1.1);
+  transform: rotate(2deg);
   transition: 0.7s;
+  color: var(--main2);
 }
 .squ h4 {
   font-size: 35px;
