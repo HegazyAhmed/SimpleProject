@@ -96,7 +96,14 @@ const CSD = document.querySelectorAll("#CSD");
 CSD[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
 });
-const CSDT = document.querySelectorAll(".squ button");
+const content = document.querySelectorAll(".item");
+content[0].addEventListener("click", function () {
+  CSD[0].classList.toggle("block");
+  CSD[1].classList.toggle("block");
+  CSD[2].classList.toggle("block");
+  CSD[3].classList.toggle("block");
+});
+const CSDT = document.querySelectorAll(".squ");
 CSDT[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
 });
