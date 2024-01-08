@@ -215,7 +215,7 @@ ul {
 }
 .footer {
   background-color: var(--main2);
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .footer-col {
   width: 25%;
@@ -427,14 +427,17 @@ ul {
   margin: 10px;
   font-size: 40px;
 }
-.secs h1,
-p {
+.secs h1 {
   text-align: center;
 }
+.secs p {
+  text-align: center;
+}
+
 .sec p {
   font-size: 18px;
-  width: 400px;
   margin: auto;
+  width: 60%;
 }
 .secs p {
   font-size: 18px;
@@ -523,12 +526,19 @@ h1 {
 }
 .title {
   width: 200px;
-  height: 80px;
+  height: 50px;
   margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border: solid black 3px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.title:hover {
+  transition: 0.7s;
+  background-color: var(--main2);
+  color: white;
 }
 .cns p {
   line-height: 2;
@@ -582,4 +592,82 @@ h1 {
   transform: rotate(2deg);
   background-color: black;
   color: white;
+}
+.sectionHow {
+  background-color: var(--main2);
+  margin: 100px auto;
+  padding: 30px;
+  height: max-content;
+}
+.sectionHow h1 {
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  width: 330px;
+  border: solid white 4px;
+  transition: 0.7s;
+}
+.sectionHow h1:hover {
+  background-color: var(--main1);
+  color: black;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.containerSection img {
+  width: 690px;
+}
+
+.containerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxes .boxo {
+  background-color: var(--main1);
+  padding: 15px;
+  margin-top: 20px;
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  transition: 0.7s;
+  line-height: 1.8;
+  border: 3px solid black;
+}
+.boxo img {
+  margin-right: 18px;
+  width: 101px;
+  height: 70px;
+  margin-top: 30px;
+}
+
+.boxo:hover {
+  background-color: #a1a07d;
+  transition: 0.7s;
+}
+@media screen and (max-width: 1205px) {
+  .boxes .boxo {
+    width: 800px;
+  }
+  .boxo img {
+    margin-top: 15px;
+  }
+  .containerSection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 820px) {
+  .boxes .boxo {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .boxes .boxo {
+    width: 300px;
+  }
+  .containerSection .secimg {
+    width: 300px;
+  }
 }
