@@ -5,14 +5,15 @@
   scroll-behavior: smooth;
 }
 :root {
-  --main1: #faf8bf;
+  --main1: #c3a456;
   --main2: #234e70;
+  --main3: #f0f0f7;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  background-color: #faf8bf;
+  background-color: #c3a456;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -510,7 +511,7 @@ h1 {
 }
 .cns {
   width: 350px;
-  background-color: var(--main2);
+  background-color: var(--main3);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -537,22 +538,22 @@ h1 {
 }
 .title:hover {
   transition: 0.7s;
-  background-color: var(--main2);
-  color: white;
+  background-color: var(--main3);
+  color: black;
 }
 .cns p {
   line-height: 2;
   font-size: 20px;
   margin: 30px 0;
   padding: 25px;
-  color: #dad5d5;
+  color: #24262b;
 }
 .cns h1 {
   position: relative;
   font-size: 40px;
   margin: auto;
   width: fit-content;
-  color: white;
+  color: black;
 }
 
 .cns h1::after {
@@ -579,12 +580,12 @@ h1 {
   width: 150px;
   padding: 10px;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--main1);
   font-weight: 800;
   margin: auto auto 50px;
   cursor: pointer;
   transition: 0.7s;
-  color: black;
+  color: white;
   border: none;
 }
 
