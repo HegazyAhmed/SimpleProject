@@ -59,6 +59,10 @@ body {
   margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
+  transition: 0.7s;
+}
+.navbar img:hover {
+  transform: scale(1.2);
 }
 
 .navbar a:hover {
