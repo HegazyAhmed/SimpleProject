@@ -526,8 +526,8 @@ h1 {
   max-width: 100%;
 }
 .title {
-  width: 200px;
-  height: 50px;
+  width: 400px;
+  height: 60px;
   margin: 20px auto;
   display: flex;
   align-items: center;
@@ -535,6 +535,13 @@ h1 {
   border: solid black 3px;
   transition: 0.7s;
   cursor: pointer;
+  text-align: center;
+}
+@media screen and (max-width: 405px) {
+  .title {
+    width: 210px;
+    height: 110px;
+  }
 }
 .title:hover {
   transition: 0.7s;
@@ -604,7 +611,7 @@ h1 {
   color: white;
   margin: 40px auto;
   text-align: center;
-  width: 320px;
+  width: 330px;
   border: solid white 4px;
   transition: 0.7s;
 }
