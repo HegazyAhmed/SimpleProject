@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  background-color: #ffd362;
+  background-color: #ffd262;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -108,17 +108,25 @@ body {
   padding: 15px 30px;
   -webkit-transition: all 250ms;
   margin: 10px 0 0 0;
-
   transition: all 250ms;
 }
 
+#Home {
+  margin: 0 0 0 30px;
+  font-size: 30px;
+}
+#Home i {
+  margin-right: 5px;
+}
 #CSDA {
   transition: 0.7s;
   position: absolute;
   display: none;
+  border-left: white solid 2px;
 }
 #CSD {
   transition: 0.7s;
+  border-left: white solid 2px;
 }
 .item #CSD {
   display: none;
@@ -493,10 +501,10 @@ h1 {
 }
 
 .squ:hover {
-  background-color: #3f3f33;
+  background-color: #8f7c4c;
   cursor: pointer;
-  transform: scale(1.1);
-  color: white;
+  transform: rotate(2deg) scale(1.1);
+  color: var(--main3);
 }
 .squ h4 {
   font-size: 35px;
@@ -546,15 +554,16 @@ h1 {
   text-align: center;
 }
 @media screen and (max-width: 405px) {
-  .title {
+  .titles {
     width: 210px;
     height: 110px;
   }
 }
+.titles,
 .title {
   text-align: center;
 }
-.title:hover {
+.titles:hover {
   transition: 0.7s;
   background-color: var(--main3);
   color: black;
