@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --main1: #c3a456;
+  --main1: #ffd362;
   --main2: #234e70;
   --main3: #f0f0f7;
 }
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  background-color: #c3a456;
+  background-color: #ffd362;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -523,7 +523,9 @@ h1 {
   position: relative;
   font-size: 40px;
   margin: auto;
-  max-width: 100%;
+  width: 150px;
+  background-color: transparent;
+  margin-top: 10px;
 }
 .title {
   width: 400px;
@@ -553,7 +555,7 @@ h1 {
   font-size: 20px;
   margin: 30px 0;
   padding: 25px;
-  color: #24262b;
+  color: #383839;
 }
 .cns h1 {
   position: relative;
