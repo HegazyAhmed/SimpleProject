@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --main1: #ffd362;
+  --main1: #fbf8be;
   --main2: #234e70;
   --main3: #f0f0f7;
 }
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cairo", sans-serif;
-  background-color: #ffd262;
+  background-color: #fbf8be;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -525,7 +525,7 @@ h1 {
 }
 .cns {
   width: 350px;
-  background-color: var(--main3);
+  background-color: var(--main2);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -573,14 +573,14 @@ h1 {
   font-size: 20px;
   margin: 30px 0;
   padding: 25px;
-  color: #383839;
+  color: var(--main3);
 }
 .cns h1 {
   position: relative;
   font-size: 40px;
   margin: auto;
   width: fit-content;
-  color: black;
+  color: var(--main3);
 }
 
 .cns h1::after {
@@ -607,12 +607,12 @@ h1 {
   width: 150px;
   padding: 10px;
   border-radius: 10px;
-  background-color: var(--main1);
+  background-color: var(--main3);
   font-weight: 800;
   margin: auto auto 50px;
   cursor: pointer;
   transition: 0.7s;
-  color: white;
+  color: black;
   border: none;
 }
 
