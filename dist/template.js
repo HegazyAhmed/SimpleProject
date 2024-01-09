@@ -93,15 +93,21 @@ window.addEventListener("keydown", function (event) {
 // });
 
 const CSD = document.querySelectorAll("#CSD");
+const CSDA = document.querySelectorAll("#CSDA");
 CSD[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
 });
 const content = document.querySelectorAll(".item");
-content[0].addEventListener("click", function () {
-  CSD[0].classList.toggle("block");
-  CSD[1].classList.toggle("block");
-  CSD[2].classList.toggle("block");
-  CSD[3].classList.toggle("block");
+const tklf = document.querySelector("#tklf");
+content[1].addEventListener("click", function () {
+  for (var i = 0; i < CSD.length; i++) {
+    CSD[i].classList.toggle("block");
+  }
+});
+tklf.addEventListener("click", function () {
+  for (var i = 0; i < CSDA.length; i++) {
+    CSDA[i].classList.toggle("block");
+  }
 });
 const CSDT = document.querySelectorAll(".squ");
 CSDT[0].addEventListener("click", function () {

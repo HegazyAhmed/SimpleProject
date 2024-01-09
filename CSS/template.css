@@ -29,7 +29,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: beige;
 }
-.navbar {
+.navbares {
   width: 100%;
   background-color: var(--main2);
   height: 60px;
@@ -42,7 +42,7 @@ body {
   z-index: 1;
 }
 
-.navbar a {
+.navbares a {
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
@@ -50,23 +50,23 @@ body {
   margin-left: 10px;
   transition: 0.5s;
 }
-.navbar ul {
+.navbares ul {
   display: flex;
   list-style: none;
   gap: 20px;
   margin-left: 80px;
 }
-.navbar img {
+.navbares img {
   margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
   transition: 0.7s;
 }
-.navbar img:hover {
+.navbares img:hover {
   transform: scale(1.2);
 }
 
-.navbar a:hover {
+.navbares a:hover {
   color: rgb(189, 185, 185);
   padding-left: 3px;
 }
@@ -110,6 +110,12 @@ body {
   margin: 10px 0 0 0;
 
   transition: all 250ms;
+}
+
+#CSDA {
+  transition: 0.7s;
+  position: absolute;
+  display: none;
 }
 #CSD {
   transition: 0.7s;
@@ -214,15 +220,15 @@ body {
 ul {
   list-style: none;
 }
-.footer {
+.footeres {
   background-color: var(--main2);
   padding: 50px 0;
 }
-.footer-col {
+.footeres-col {
   width: 25%;
   padding: 0 15px;
 }
-.footer-col h4 {
+.footeres-col h4 {
   font-size: 22px;
   color: #ffffff;
   text-transform: capitalize;
@@ -230,7 +236,7 @@ ul {
   font-weight: 500;
   position: relative;
 }
-.footer-col h4::before {
+.footeres-col h4::before {
   content: "";
   position: absolute;
   left: 0;
@@ -240,10 +246,10 @@ ul {
   box-sizing: border-box;
   width: 50px;
 }
-.footer-col ul li:not(:last-child) {
+.footeres-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-.footer-col ul li a {
+.footeres-col ul li a {
   font-size: 20px;
   text-transform: capitalize;
   color: #ffffff;
@@ -253,11 +259,11 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
-.footer-col ul li a:hover {
+.footeres-col ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
 }
-.footer-col .social-links a {
+.footeres-col .social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -269,20 +275,20 @@ ul {
   color: #ffffff;
   transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover {
+.footeres-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
 }
 
 /*responsive*/
 @media (max-width: 767px) {
-  .footer-col {
+  .footeres-col {
     width: 50%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 574px) {
-  .footer-col {
+  .footeres-col {
     width: 100%;
   }
 }
@@ -527,7 +533,7 @@ h1 {
   background-color: transparent;
   margin-top: 10px;
 }
-.title {
+.titles {
   width: 400px;
   height: 60px;
   margin: 20px auto;
@@ -544,6 +550,9 @@ h1 {
     width: 210px;
     height: 110px;
   }
+}
+.title {
+  text-align: center;
 }
 .title:hover {
   transition: 0.7s;
