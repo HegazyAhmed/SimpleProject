@@ -526,7 +526,7 @@ h1 {
 .cns {
   width: 350px;
   background-color: var(--main2);
-  margin: auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   text-align: center;
