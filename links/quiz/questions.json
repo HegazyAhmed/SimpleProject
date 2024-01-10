@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Why we use <br> Element or tag",
+    "answer_1": "To make breackline",
+    "answer_2": "To make a line",
+    "answer_3": "To make header",
+    "answer_4": "To make Horizontal Line",
+    "right_answer": "To make breackline"
+  },
+  {
+    "title": "What does CSS do",
+    "answer_1": "Style the page",
+    "answer_2": "To script the page",
+    "answer_3": "make programs",
+    "answer_4": "programming the site",
+    "right_answer": "Style the page"
+  },
+  {
+    "title": "What we need to make awebsite page",
+    "answer_1": "HTML",
+    "answer_2": "CSS",
+    "answer_3": "JAVASCRIPT",
+    "answer_4": "All answers are true",
+    "right_answer": "All answers are true"
+  },
+  {
+    "title": "Which langauge is not areal programming language",
+    "answer_1": "CSS",
+    "answer_2": "JAVASCRPT",
+    "answer_3": "C++",
+    "answer_4": "JAVA",
+    "right_answer": "CSS"
+  },
+  {
+    "title": "What is the framework that make desktop apps",
+    "answer_1": "Electron.js",
+    "answer_2": "React.js",
+    "answer_3": "Vue.js",
+    "answer_4": "Angluar.js",
+    "right_answer": "Electron.js"
+  },
+  {
+    "title": "which of this language that you cant make calclutar with",
+    "answer_1": "PYTHON",
+    "answer_2": "JAVASCRPT",
+    "answer_3": "C++",
+    "answer_4": "CSS",
+    "right_answer": "CSS"
+  },
+  {
+    "title": "Why we use <hr> Element or tag",
+    "answer_1": "To make breackline",
+    "answer_2": "To make a line",
+    "answer_3": "To make header",
+    "answer_4": "To make Horizontal Line",
+    "right_answer": "To make Horizontal Line"
+  },
+  {
+    "title": "Why we use <h1> Element or tag",
+    "answer_1": "To make breackline",
+    "answer_2": "To make a line",
+    "answer_3": "To make header",
+    "answer_4": "To make Horizontal Line",
+    "right_answer": "To make header"
+  },
+  {
+    "title": "Why we use <title>",
+    "answer_1": "To make a text bold",
+    "answer_2": "To make header",
+    "answer_3": "To make title for the page",
+    "answer_4": "To make Horizontal Line",
+    "right_answer": "To make title for the page"
+  },
+  {
+    "title": "do we need javascript",
+    "answer_1": "NO",
+    "answer_2": "YES",
+    "answer_3": "MAYBE",
+    "answer_4": "no answers are true",
+    "right_answer": "YES"
+  }
+]

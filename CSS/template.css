@@ -41,7 +41,9 @@ body {
   top: 0;
   z-index: 1;
 }
-
+.none {
+  display: none !important;
+}
 .navbares a {
   cursor: pointer;
   font-size: 20px;
@@ -98,6 +100,7 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  height: 500px;
 }
 .fs {
   margin-right: 10px;
@@ -128,9 +131,12 @@ body {
 #CSD {
   transition: 0.7s;
   border-left: white solid 2px;
-}
-.item #CSD {
   display: none;
+}
+
+.item #CSDB {
+  display: none;
+  border-left: white solid 2px;
 }
 .block {
   display: block !important;
@@ -209,6 +215,7 @@ body {
 /* / */
 /* / */
 /* / */
+
 /* / */
 /* / */
 /* / */
@@ -442,10 +449,17 @@ ul {
 .sec h1 {
   margin: 10px;
   font-size: 40px;
+  position: relative;
 }
+
 .secs h1 {
+  margin: auto;
   text-align: center;
+  position: relative;
+  width: max-content;
+  padding-left: 8px;
 }
+
 .secs p {
   text-align: center;
 }
@@ -470,17 +484,20 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   padding: 20px;
+  width: fit-content;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1133px) {
   .gridsys {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 777px) {
   .gridsys {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+@media screen and (max-width: 660px) {
   .navbares ul {
     display: none;
   }
@@ -492,7 +509,7 @@ h1 {
 .squ {
   background-color: var(--main1);
   color: black;
-  width: 290px;
+  width: 330px;
   margin: auto;
   border-radius: 10px;
   line-height: 1.8;
@@ -507,8 +524,17 @@ h1 {
   transform: rotate(2deg) scale(1.1);
   color: var(--main3);
 }
+@media screen and (max-width: 400px) {
+  .gridsys {
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+  }
+  .squ {
+    width: 250px;
+  }
+}
 .squ h4 {
-  font-size: 35px;
+  font-size: 26px;
 }
 
 .imgtwo {
@@ -519,20 +545,28 @@ h1 {
   width: 100%;
   height: 500px;
 }
+.cnc {
+  width: 100%;
+  overflow: hidden;
+}
 .cnsa {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  width: fit-content;
+  gap: 50px;
+  margin: auto;
 }
+
 .cns {
   width: 350px;
   background-color: var(--main2);
-  margin: 30px auto;
+  margin: 20px auto 100px auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   line-height: 1.8;
   position: relative;
+  border-top: solid 30px var(--main3);
 }
 .cns img {
   position: relative;
@@ -543,17 +577,43 @@ h1 {
   margin-top: 30px;
 }
 .titles {
-  width: 400px;
-  height: 60px;
-  margin: 20px auto;
+  width: max-content;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid black 3px;
   transition: 0.7s;
   cursor: pointer;
   text-align: center;
 }
+.linea {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.linea::after {
+  content: "";
+  top: 6px;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+.linea::before {
+  content: "";
+  top: 6px;
+  right: 0;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+
 @media screen and (max-width: 405px) {
   .titles {
     width: 210px;
@@ -564,11 +624,10 @@ h1 {
 .title {
   text-align: center;
 }
-.titles:hover {
-  transition: 0.7s;
-  background-color: var(--main2);
-  color: white;
+.title {
+  font-size: 20px;
 }
+
 .cns p {
   line-height: 2;
   font-size: 20px;
@@ -630,10 +689,9 @@ h1 {
 }
 .sectionHow h1 {
   color: white;
-  margin: 40px auto;
+  margin: auto;
   text-align: center;
-  width: 330px;
-  border: solid white 4px;
+  width: max-content;
   transition: 0.7s;
 }
 .sectionHow h1:hover {
@@ -691,12 +749,123 @@ h1 {
   .boxes .boxo {
     width: 500px;
   }
+  .containerSection .secimg {
+    width: 510px;
+  }
 }
 @media screen and (max-width: 520px) {
   .boxes .boxo {
     width: 300px;
   }
   .containerSection .secimg {
+    width: 300px;
+  }
+}
+/* ////////////// section usfil ////////////// */
+.sectionusful {
+  background-color: var(--main2);
+  padding: 20px;
+}
+.sectionusful h1,
+.sectionusful h4 {
+  margin: auto;
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+  width: max-content;
+  position: relative;
+}
+.line {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main3);
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.line::after {
+  content: "";
+  top: 6px;
+  width: 100px;
+  height: 3px;
+  background-color: var(--main3);
+  position: absolute;
+}
+.line::before {
+  content: "";
+  top: 6px;
+  right: 0;
+  width: 100px;
+  height: 3px;
+  background-color: var(--main3);
+  position: absolute;
+}
+
+.sectionusful {
+  margin: auto;
+  text-align: center;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px auto;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  width: fit-content;
+  gap: 10px;
+}
+
+.video img {
+  width: 300px;
+}
+.video {
+  text-decoration: solid;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video .texts {
+  background-color: #eee;
+  color: black;
+  width: 300px;
+  padding: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.video .texts a {
+  text-decoration: none;
+  color: #234e70;
+  font-weight: bold;
+}
+.video .texts a:hover {
+  color: #318ad3;
+}
+@media screen and (max-width: 964px) {
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .videos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .videos {
+    grid-template-columns: repeat(1, 1fr);
+    width: max-content;
+  }
+  .video img {
+    width: 300px;
+  }
+  .video .texts {
     width: 300px;
   }
 }

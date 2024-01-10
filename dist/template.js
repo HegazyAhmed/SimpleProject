@@ -94,11 +94,18 @@ window.addEventListener("keydown", function (event) {
 
 const CSD = document.querySelectorAll("#CSD");
 const CSDA = document.querySelectorAll("#CSDA");
+const CSDB = document.querySelectorAll("#CSDB");
+const content = document.querySelectorAll(".item");
+const tklf = document.querySelector("#tklf");
+const quizs = document.querySelector("#quizs");
+////////////////LINKS//////////////////
 CSD[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
 });
-const content = document.querySelectorAll(".item");
-const tklf = document.querySelector("#tklf");
+CSDB[0].addEventListener("click", function () {
+  window.open("links/quiz/index.html");
+});
+///////////////SIDE BAR ///////////////////
 content[1].addEventListener("click", function () {
   for (var i = 0; i < CSD.length; i++) {
     CSD[i].classList.toggle("block");
@@ -109,7 +116,14 @@ tklf.addEventListener("click", function () {
     CSDA[i].classList.toggle("block");
   }
 });
+quizs.addEventListener("click", function () {
+  for (var i = 0; i < CSDB.length; i++) {
+    CSDB[i].classList.toggle("block");
+  }
+});
 const CSDT = document.querySelectorAll(".squ");
 CSDT[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
 });
+/////////////////////////////////////////////////////
+////slider
