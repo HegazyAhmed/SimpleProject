@@ -634,6 +634,11 @@ h1 {
   width: 150px;
   background-color: transparent;
   margin-top: 30px;
+  transition: 0.7s;
+}
+.cns img:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
 }
 .titles {
   width: max-content;
@@ -879,6 +884,13 @@ h1 {
 
 .video img {
   width: 300px;
+  transition: 0.7s;
+  overflow: hidden;
+}
+.video img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  overflow: hidden;
 }
 .video {
   text-decoration: solid;
@@ -886,6 +898,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .video .texts {
   background-color: #eee;
@@ -895,6 +908,7 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .video .texts a {
