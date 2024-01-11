@@ -95,9 +95,11 @@ window.addEventListener("keydown", function (event) {
 const CSD = document.querySelectorAll("#CSD");
 const CSDA = document.querySelectorAll("#CSDA");
 const CSDB = document.querySelectorAll("#CSDB");
+const CSDC = document.querySelectorAll("#CSDC");
 const content = document.querySelectorAll(".item");
 const tklf = document.querySelector("#tklf");
 const quizs = document.querySelector("#quizs");
+const themes = document.querySelector("#themes");
 ////////////////LINKS//////////////////
 CSD[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
@@ -121,6 +123,11 @@ quizs.addEventListener("click", function () {
     CSDB[i].classList.toggle("block");
   }
 });
+themes.addEventListener("click", function () {
+  for (var i = 0; i < CSDC.length; i++) {
+    CSDC[i].classList.toggle("block");
+  }
+});
 const CSDT = document.querySelectorAll(".squ");
 CSDT[0].addEventListener("click", function () {
   window.open("links/mostafa/soso.html");
@@ -138,4 +145,5 @@ document.getElementById("show-element").onclick = function () {
     document.getElementsByTagName("body")[0].className = "off";
     document.getElementById("show-element").className = "";
   }
-}; ///////////////////////////////
+};
+///////////////////////
