@@ -16,9 +16,13 @@ body {
 
 .quiz-app {
   margin: 20px auto;
-  width: 800px;
+  width: 870px;
   padding: 15px;
   background-color: var(--main3);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 .quiz-app .quiz-info {
   background-color: var(--main2);
@@ -132,9 +136,8 @@ body {
 }
 @media (max-width: 867px) {
   .quiz-app {
-    width: max-content;
+    width: 310px;
     padding: 10px;
-    height: 895px;
   }
   .quiz-app .answers-area {
     display: block;
