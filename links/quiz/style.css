@@ -11,7 +11,7 @@
 }
 body {
   font-family: "Cairo", sans-serif;
-  background-color: #234e70;
+  background-color: rgb(54, 53, 53) !important;
 }
 
 .quiz-app {

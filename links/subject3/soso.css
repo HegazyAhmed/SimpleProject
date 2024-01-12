@@ -8,6 +8,27 @@
   --main2: #234e70;
   --main3: #f0f0f7;
 }
+.navbares {
+  width: 100%;
+  background-color: black;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbares img {
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.navbares img:hover {
+  transform: scale(1.2);
+}
 #box {
   position: fixed;
   z-index: 4;
