@@ -353,36 +353,19 @@ ul {
   list-style: none;
 }
 .footeres {
-  background-color: var(--main2);
-  padding: 50px 0;
+  background-color: black;
+  padding: 30px 0;
+  text-align: center;
 }
 .footeres-col {
   width: 25%;
-  padding: 0 15px;
 }
-.footeres-col h4 {
-  font-size: 22px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footeres-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: var(--main1);
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footeres-col ul li:not(:last-child) {
+
+/* .footeres-col ul li:not(:last-child) {
   margin-bottom: 10px;
-}
+} */
 .footeres-col ul li a {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
@@ -390,6 +373,7 @@ ul {
   color: #bbbbbb;
   display: block;
   transition: all 0.3s ease;
+  margin-top: 10px;
 }
 .footeres-col ul li a:hover {
   color: #ffffff;
@@ -400,7 +384,7 @@ ul {
   height: 40px;
   width: 40px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
+  /* margin: 0 10px 10px 0; */
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -547,14 +531,7 @@ ul {
     transform: rotate(0);
   }
 }
-.sec {
-  text-align: center;
-  width: 100%;
-  color: white;
-  margin: 100px auto auto auto;
-  background-color: var(--main2);
-  padding: 20px;
-}
+
 .secs {
   margin: auto auto 30px auto;
   background-color: var(--main2);
@@ -563,33 +540,16 @@ ul {
   color: white;
   padding: 15px;
 }
-.sec h1 {
-  margin: 10px;
-  font-size: 40px;
-  position: relative;
-}
 
+.secs p {
+  text-align: center;
+}
 .secs h1 {
-  margin: auto;
-  text-align: center;
-  position: relative;
-  width: max-content;
-}
-
-.secs p {
   text-align: center;
 }
 
-.sec p {
-  font-size: 18px;
-  margin: auto;
-  width: 60%;
-}
 .secs p {
   font-size: 18px;
-}
-.sec img {
-  max-width: 100%;
 }
 h1 {
   font-size: 40px;
@@ -822,21 +782,22 @@ h1 {
   color: white;
 }
 .sectionHow {
-  background-color: var(--main2);
-  margin: 100px auto;
+  background-color: var(--main1);
+  margin: auto;
   padding: 30px;
   height: max-content;
+  border-bottom: var(--main2) solid 5px;
 }
 .sectionHow h1 {
-  color: white;
-  margin: auto;
+  color: black;
+  margin: 10px auto;
   text-align: center;
   width: max-content;
   transition: 0.7s;
 }
 .sectionHow h1:hover {
-  background-color: var(--main1);
-  color: black;
+  background-color: var(--main2);
+  color: white;
   transition: 0.7s;
   cursor: pointer;
 }
@@ -851,7 +812,8 @@ h1 {
   align-items: center;
 }
 .boxes .boxo {
-  background-color: var(--main1);
+  color: var(--main3);
+  background-color: var(--main2);
   padding: 15px;
   margin-top: 20px;
   width: 500px;
@@ -863,6 +825,7 @@ h1 {
   line-height: 1.8;
   border: 3px solid black;
 }
+
 .boxo img {
   margin-right: 18px;
   width: 101px;
